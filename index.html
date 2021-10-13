@@ -1,12 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="CSS/estilos.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mr+Bedfort&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Document</title>
-</head>
-<body>
+  </head>
+
+  <body>
+    <nav class="fadeInDown">
+      <div class="brand_image">
+        <a href="index.html">
+          <img src="image/icons/logo.png" width="60px" alt="logo" />
+        </a>
+      </div>
+
+      <div class="nav_options">
+        <div class="div_search">
+          <form action="" class="form_search">
+            <input type="text" placeholder="Buscar" class="search" />
+          </form>
+          <img src="image/icons/search.png" width="24" alt="" />
+        </div>
+        <ul>
+          <li class="option"><a href="#">Login</a></li>
+          <li class="option"><a href="producto.html">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <!-- Carousel-->
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+
+        <div class="carousel-inner" style="height: 600px">
+          <div class="carousel-item active">
+            <img
+              src="image/menu1.png"
+              class="d-block w-100"
+              height="600px"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="image/cake-374044_1920.jpg"
+              class="d-block w-100"
+              height="600px"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="image/donut-4832823_1920.jpg"
+              class="d-block w-100"
+              height="600px"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="image/croissants-569075_1920.jpg"
+              class="d-block w-100"
+              height="600px"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="menu_home">
+      <div class="first_course"  id="course1">
+        <div class="alpha_img"">
+        <p class="title_course">Donas Glaseadas con chispas</p>
+        <div class="btns">
+          <button type="button" class="btn btn-warning btn1">Ver Detalles</button>
+          <button type="button" class="btn btn-warning btn2">Agregar al carrito</button>
+        </div>
+        </div>
+      </div>
     
-</body>
+      <div class="seconst_course"  id="course2">
+        <div class="alpha_img"">
+        <p class="title_course">croissant francés relleno</p>
+        <div class="btns">
+          <button type="button" class="btn btn-warning btn1">Ver Detalles</button>
+          <button type="button" class="btn btn-warning btn2">Agregar al carrito</button>
+       </div>
+        </div>
+      </div>
+
+      <div class="first_course"  id="course3">
+        <div class="alpha_img"">
+        <p class="title_course">Pastel de chocolate</p>
+        <div class="btns">
+          <button type="button" class="btn btn-warning btn1">Ver Detalles</button>
+          <button type="button" class="btn btn-warning btn2">Agregar al carrito</button>
+      </div>
+        </div>
+      </div>
+   
+      <div class="seconst_course"  id="course4">
+        <div class="alpha_img"">
+        <p class="title_course">Postre de tres leches</p>
+        <div class="btns">
+          <button type="button" class="btn btn-warning btn1">Ver Detalles</button>
+          <button type="button" class="btn btn-warning btn2">Agregar al carrito</button>
+        </div>
+        </div>
+      </div>
+  
+    </div>
+
+
+    <footer>
+        <div>
+            
+            <p id="pf1">Misión</p>
+            <p id="pf2">Visión</p>
+            <p id="pf3">Conocemos mejor</p>
+            <p id="pf4">Términos y condiciones</p>
+        </div>
+
+        <div>
+            <div id="pf5">
+                <img src="image/icons/location-pin.png" width="24px" height="24px" alt="">
+                <p>Ubicacion: Carrera 5648 Numero 598</p>
+            </div>
+            <div id="pf6">
+                <img src="image/icons/telephone.png" width="24px"  height="24px" alt="">
+                <p>Telefono: 54982158</p>
+            </div>
+            <div id="pf7">
+                <img src="image/icons/whatsapp.png" width="24px"  height="24px" alt="">
+                <p>Whatsapp: 32154862315</p>
+            </div>
+            <div id="pf8">
+                <img src="image/icons/gmail.png" width="24px" height="24px"  alt="">
+                <p id="pf8">Correo: gourmetHorneado@gourmetHor.or.com</p>
+            </div>
+        </div>
+    </footer>
+  </body>
 </html>
