@@ -1,5 +1,6 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Mr+Bedfort&display=swap');
-*/
+/*Importacion de tipografias*/
+@import url('https://fonts.googleapis.com/css2?family=Mr+Bedfort&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Milonga&display=swap');
 
 /*-----------------Variables----------------*/
 
@@ -39,13 +40,16 @@ label {
 /*----------------------NavBar---------------------*/
 
 nav {
+    width: 100%;
     display: flex;
     background-color: var(--orangel-yellow-color);
-    padding: 10px;
     color: var(--white-color);
     justify-content: space-between;
     align-items: center;
-    min-height: 60px;
+    max-height: 75px;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 20px;
 }
 
 nav ul {
@@ -68,6 +72,7 @@ nav li a:hover {
 
 .nav_options {
     display: flex;
+    align-items: center;
 }
 
 .div_search {
@@ -76,6 +81,7 @@ nav li a:hover {
     align-items: center;
     justify-content: center;
     width: 500px;
+    height: 40px;
     background-color: var(--white-color);
     border-radius: 50px;
 }
@@ -213,6 +219,90 @@ nav li a:hover {
     background-size: 24px 24px;
     background-position-x: 10px;
     background-position-y: 10px;
+}
+
+
+
+
+/*----------------------sidebars---------------------*/
+
+.background_blur{
+    width: 100%;
+    height: 850px;
+    /*asignarle una imagen de fondo*/
+    background-image: url(../image/restaurant-5521372_1920.jpg);
+    /*Para centrar la imagen vertical y horizontal  */
+    background-position: center center;
+    /* La imagen se fija en la ventana de visualización para que la 
+    altura de la imagen no supere a la del contenido */
+    background-attachment: fixed;
+    /*aplicamos COVER en el tamanyo para que la imagen se escale al mayor tamaño posible. */
+   
+    /* aplicamos el filtro blur para difuminar o desenfocar la imagen de fondo*/
+    filter: blur(3px);
+    background-size: cover;
+    background-color: #9b9675;
+
+    position: absolute;
+    left: 0px;
+    top: 90px;
+
+}
+
+.admin{
+    position: relative;
+
+}
+
+li{
+    margin-top: 10px;
+    margin-bottom: 20px;
+  
+}
+
+a{
+    font-family: 'Milonga', cursive;
+    color: #EBE07B;
+    text-decoration: none;
+}
+
+.a_logo{
+    display: flex;
+    justify-content:center;
+}
+
+.sidebars{
+    width: 280px;
+    height: 850px;
+    background-color: #1B1929;
+    justify-content:center;
+  
+}
+
+hr{
+    height: 1px;
+    background-color: #EEB31B;
+    color: #EEB31B;
+    margin: 1rem 0;
+    border: 0;
+    opacity: 100;
+}
+
+
+.img_admin{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+
+.inf_vers{
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    font-family: 'Milonga', cursive;
+    color: #EBE07B;
+
 }
 
 /*----------------------Main section---------------------*/
