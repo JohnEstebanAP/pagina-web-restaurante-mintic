@@ -90,6 +90,20 @@ nav li {
   padding-right: 0.9rem;
 }
 
+.li_nav_login{
+    width: auto;
+    margin: auto auto;
+    background-color:var(--white-color);
+    border: none;
+    border-radius: 50px;
+    color: var(--white-color);
+    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+}
+
 nav li a {
   text-decoration: none;
   color: var(--black-color);
@@ -277,6 +291,49 @@ nav li a:hover {
     font-size: 20px;
     }
 
+
+/*---------------------- Login ---------------------*/
+.container_login{
+    width: 800px;
+    height: 500px;
+    display: flex;
+    margin: 0 auto;
+}
+.login_bacground{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 500px;
+    background-color: var(--orangel-color);
+    justify-content: center;
+}
+.login_bacground p{
+   color: var(--white-color);
+   text-align: center;
+   font-size: 50px;
+   font-weight: bold;
+   
+}
+.login_bacground img{
+    color: var(--white-color);
+    width: 200px;
+    height: 200px;
+    margin: 0 30%;
+ }
+ .container_form{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    width: 400px;
+    height: 500px;
+    margin: 0 auto;
+    padding-top: 120px;
+ }
+ .title_login{
+    font-size: 25px !important;
+    text-align: center !important;
+    font-weight: bold;
+ }
 
 /*----------------------Menu Home---------------------*/
 

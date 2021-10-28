@@ -29,6 +29,14 @@ def register():
         return render_template('register.html')
     return render_template('register.html')
 
+
+@app.route('/login',methods=['GET','POST'])
+def login():
+    if request.method=='POST':
+        # Handle POST Request here
+        return render_template('login.html')
+    return render_template('login.html')
+
 #la funcion main, llamado a el puto inicial de ejecucion de estaaplicacion web y disparar el servidor del
 if __name__ == '__main__':
     #DEBUG is SET to TRUE. CHANGE FOR PROD
